@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Contacts</h1>
+
+    <!-- tables -->
+    <table width="50%" border="1">
+        <thead>
+            <tr>
+                <td rowspan="2">11</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- <td>1</td> -->
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+        <tfoot>
+            <td colspan="4">Большая ячейка</td>
+            </tr>
+        </tfoot>
+        </tbody>
+    </table>
+
+
+    <h1>Формы</h1>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>User Information</legend>
+            <label for="username">Your Name:</label>
+            <input type="text" name="username" id="username" maxlenght="10" minleght="3" required>
+            <label for="surname">Your Surname:</label>
+            <input type="text" name="surname" id="surname" required>
+            <label for="date">Your date of brith:</label>
+            <input type="date" name="date" id="date" required>
+        </fieldset>
+        <fieldset>
+            <legend>User password</legend>
+            <label for="pass">Type your password:</label>
+            <input type="password" name="pass" id="pass" pattern="([A-z])+([0-9])+([\!,\_\@])">
+            <label for="pass-repead">Repeat your password:</label>
+            <input type="password" name="pass-repead" id="pass-repead" pattern="([A-z])+([0-9])+([\!,\_\@])">
+        </fieldset>
+        <fieldset disabled>
+            Ваша любимая марка авто: <br>
+            <input type="radio" name="User_select" id="userselect1" value="Audi">
+            <label for="userselect1">Audi</label> <br>
+            <input type="radio" name="User_select" id="userselect2" value="BMW">
+            <label for="userselect2">BMW</label> <br>
+            <input type="radio" name="User_select" id="userselect3" value="Ford">
+            <label for="userselect3">Ford</label>
+        </fieldset>
+        <fieldset>
+            <label for="Job">Выберите профессию:</label> 
+            <select name="Job" id="job">
+                <option value="">-</option>
+                <option value="Программист">Программист</option>
+                <option value="Бухгалтер">Бухгалтер</option>
+                <option value="Преподаватель"selected>Преподаватель</option>
+            </select>
+            <div>
+                <label for="">Ваше место работы:</label>
+                <input type="date" name="" id="" placeholder="Дата начала">
+                -
+                <input type="date" name="" id="" placeholder="Дата увольнения">
+                -
+                <input type="text" name="" id="" placeholder="Должность">
+                <button>+Добавить</button>
+            </div>
+        </fieldset>
+        <fieldset>
+            <label for="bio">Ваша биография:</label> <br>
+            <textarea name="bio" id="bio" cols="30" rows="10" maxlength="150"></textarea> <br> <hr>
+            <label for="avatar"> Ваша фотография:</label> <br>
+            <input type="file" name="Avatar" id="avatar" accept="image/*" multiple>
+        </fieldset>
+        <input type="submit" value="Сохранить">
+        <input type="reset" value="Очистить форму">
+
+        <label for="Number">Number:</label> 
+        <input type="number" name="number" id="" max="100" min="1" step="5">
+        <input type="range" name="number2" id="" max="100" min="0" step="10">
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+    <!-- tables -->
+
+</body>
+
+</html>
